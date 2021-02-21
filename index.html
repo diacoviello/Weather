@@ -10,11 +10,16 @@
       integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A=="
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Weather Forecast</title>
   </head>
   <body>
     <header>
-      <div class="deep-purple darken-4" style="height: 150px; padding: 40px 0">
+      <div class="blue accent-4" style="height: 150px; padding: 40px 0">
         <h1 class="white-text" style="text-align: center; margin: 0px">
           <strong>My Weather Dashboard</strong>
         </h1>
@@ -22,15 +27,97 @@
     </header>
 
     <div class="row">
-      <div class="col s3">
-        <!-- sidebar with localstorage items for cities & searchbar -->
+      <!-- sidebar with localstorage items for cities & searchbar -->
+      <div class="col s3" style="padding: 5px">
+        <!-- search bar -->
+        <h4>Search for a City:</h4>
+        <nav>
+          <div class="nav-wrapper blue accent-1">
+            <form id="search-city">
+              <div class="input-field">
+                <input id="search-input" type="search"  required />
+                <label class="label-icon" for="search"
+                  ><i class="material-icons">search</i></label
+                >
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+        <ul id="city-list"></ul>
       </div>
 
       <div class="col s9">
         <!-- weather display area -->
+        <!-- Current weather card -->
+        <div class="row">
+        <div class="card-panel">
+          <div class="black-text">
+            <h3 class="location-date" style="margin: 0">Location / Date</h3>
+            <p></p>
+            <p><h5>Temperature:</h5></p>
+            <p></p>
+            <p><h5>Humidity:</h5></p>
+            <p></p>
+            <p><h5>Wind Speed:</h5></p>
+            <p></p>
+            <p><h5>UV Index:</h5></p>
+          </div>
+        </div>
+        </div>
+        <!-- 5 day forecast cards -->
+        <div class="row">  
+          <h4>5-day Forecast</h4>
+          <div class="row">
+            <div class="card-container" style="display: flex; justify-content: space-between; align-items: center;">
+                <!-- daycard -->
+                <div class="col m2" style="margin: 0px">
+                  <div class="card">
+ 
+                    <div class="card-panel yellow">
+
+                    </div>
+                  </div>
+                </div>
+                 <!-- daycard -->
+              <div class="col m2">
+                  <div class="card">
+                    <div class="card-panel yellow">
+
+                    </div>
+                    </div>
+              </div>
+                <!-- daycard -->
+              <div class="col m2">
+                  <div class="card">
+                    <div class="card-panel yellow">
+
+                    </div>
+                    </div>
+              </div>
+                <!-- daycard -->
+              <div class="col m2">
+                  <div class="card">
+                    <div class="card-panel yellow">
+
+                    </div>
+                    </div>
+              </div>
+                <!-- daycard -->
+              <div class="col m2">
+                  <div class="card">
+                    <div class="card-panel yellow">
+
+                    </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <script src="assets/script.js"></script>
+    <script src="config.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
