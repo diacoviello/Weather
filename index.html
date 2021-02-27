@@ -35,7 +35,7 @@
           <div class="nav-wrapper blue accent-1">
             <form id="search-city">
               <div class="input-field">
-                <input id="search-input" type="search"  required />
+                <input id="search-input" type="search" required />
                 <label class="label-icon" for="search"
                   ><i class="material-icons">search</i></label
                 >
@@ -51,65 +51,89 @@
         <!-- weather display area -->
         <!-- Current weather card -->
         <div class="row">
-        <div class="card-panel">
-          <div class="black-text">
-            <h3 class="location-date" style="margin: 0">Location / Date</h3>
-            <p></p>
-            <p><h5>Temperature:</h5></p>
-            <p></p>
-            <p><h5>Humidity:</h5></p>
-            <p></p>
-            <p><h5>Wind Speed:</h5></p>
-            <p></p>
-            <p><h5>UV Index:</h5></p>
+          <div class="card-panel">
+            <div class="black-text">
+              <h3 class="location-date" style="margin: 0" id="locdate">
+                Location / Date
+              </h3>
+              <img id="img" src="" />
+              <p></p>
+              <p id="temp"></p>
+              <p></p>
+              <p id="humid"></p>
+              <p></p>
+              <p id="wind"></p>
+              <p></p>
+              <p id="uvindex"></p>
+            </div>
           </div>
         </div>
-        </div>
         <!-- 5 day forecast cards -->
-        <div class="row">  
+        <div class="row">
           <h4>5-day Forecast</h4>
           <div class="row">
-            <div class="card-container" style="display: flex; justify-content: space-between; align-items: center;">
-                <!-- daycard -->
-                <div class="col m2" style="margin: 0px">
-                  <div class="card">
- 
-                    <div class="card-panel yellow">
-
-                    </div>
+            <div
+              class="card-container"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <!-- daycard -->
+              <div class="col m2" style="margin: 0px">
+                <div class="card" id="day-1">
+                  <div class="card-panel yellow">
+                    <h5><p id="date1"></p></h5>
+                    <p><img id="icon1" src="" /></p>
+                    <p id="temp1"></p>
+                    <p id="hum1"></p>
                   </div>
                 </div>
-                 <!-- daycard -->
-              <div class="col m2">
-                  <div class="card">
-                    <div class="card-panel yellow">
-
-                    </div>
-                    </div>
               </div>
-                <!-- daycard -->
+              <!-- daycard -->
               <div class="col m2">
-                  <div class="card">
-                    <div class="card-panel yellow">
-
-                    </div>
-                    </div>
+                <div class="card" id="day-2">
+                  <div class="card-panel yellow">
+                    <h5><p id="date2"></p></h5>
+                    <p><img id="icon2" src="" /></p>
+                    <p id="temp2"></p>
+                    <p id="hum2"></p>
+                  </div>
+                </div>
               </div>
-                <!-- daycard -->
+              <!-- daycard -->
               <div class="col m2">
-                  <div class="card">
-                    <div class="card-panel yellow">
-
-                    </div>
-                    </div>
+                <div class="card" id="day-3">
+                  <div class="card-panel yellow">
+                    <h5><p id="date3"></p></h5>
+                    <p><img id="icon3" src="" /></p>
+                    <p id="temp3"></p>
+                    <p id="hum3"></p>
+                  </div>
+                </div>
               </div>
-                <!-- daycard -->
+              <!-- daycard -->
               <div class="col m2">
-                  <div class="card">
-                    <div class="card-panel yellow">
-
-                    </div>
-                    </div>
+                <div class="card" id="day-4">
+                  <div class="card-panel yellow">
+                    <h5><p id="date4"></p></h5>
+                    <p><img id="icon4" src="" /></p>
+                    <p id="temp4"></p>
+                    <p id="hum4"></p>
+                  </div>
+                </div>
+              </div>
+              <!-- daycard -->
+              <div class="col m2">
+                <div class="card" id="day-5">
+                  <div class="card-panel yellow">
+                    <h5><p id="date5"></p></h5>
+                    <p><img id="icon5" src="" /></p>
+                    <p id="temp5"></p>
+                    <p id="hum5"></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

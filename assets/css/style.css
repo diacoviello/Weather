@@ -25,3 +25,8 @@ li::after {
   display: block;
   clear: both;
 }
+
+#city-btn {
+  opacity: 0;
+  border: none;
+}
