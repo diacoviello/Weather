@@ -9,7 +9,7 @@ li {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  background-color: blueviolet;
+  background-color: white;
   color: white;
   font-size: 1.5em;
   line-height: 1.5;
@@ -26,7 +26,7 @@ li::after {
   clear: both;
 }
 
-#city-btn {
+.data-index {
   opacity: 0;
-  border: none;
+  color: blue;
 }

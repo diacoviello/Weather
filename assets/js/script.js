@@ -68,7 +68,7 @@ function printResults(resultObj) {
 
   var date1 = document.getElementById("date1");
   date1.innerHTML = new Date(resultObj.daily[1].dt * 1000).toDateString();
-  var icon1 = document.getElementById("icon1")
+  var icon1 = document.getElementById("icon1");
   icon1.src =
     "https://openweathermap.org/img/wn/" +
     resultObj.daily[1].weather[0].icon +
