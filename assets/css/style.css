@@ -5,17 +5,17 @@ ul {
 }
 
 li {
-  height: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 25px;
+  height: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 20px;
   background-color: white;
   color: white;
   font-size: 2em;
-  line-height: 1.5;
+  line-height: 1em;
 }
 
-li:before {
+/* li:before {
   content: "\200B";
   position: absolute;
 }
@@ -24,4 +24,8 @@ li::after {
   content: " ";
   display: block;
   clear: both;
+} */
+
+.city-btn {
+  width: 100%;
 }

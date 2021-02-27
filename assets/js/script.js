@@ -158,6 +158,7 @@ function renderCities() {
     var li = document.createElement("li");
     var button = document.createElement("button");
     button.textContent = city;
+    button.className="city-btn";
     button.setAttribute("data-index", i);
     li.appendChild(button);
 
