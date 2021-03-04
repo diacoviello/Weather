@@ -158,7 +158,7 @@ function renderCities() {
     var li = document.createElement("li");
     var button = document.createElement("button");
     button.textContent = city;
-    button.className="city-btn";
+    button.className = "city-btn";
     button.setAttribute("data-index", i);
     li.appendChild(button);
 
@@ -188,7 +188,8 @@ function init() {
 function searchApi(query) {
   var locQueryUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
 
-  locQueryUrl = locQueryUrl + query + "&appid=" + myKey;
+  locQueryUrl =
+    locQueryUrl + query + "&appid=" + "6d4473720e2d9193d592f1ea5f1c6e6e";
   console.log(locQueryUrl);
 
   fetch(locQueryUrl)
@@ -207,7 +208,7 @@ function searchApi(query) {
         "&lon=" +
         data.coord.lon +
         "&exclude=minutely,hourly,alerts&appid=" +
-        myKey +
+        "6d4473720e2d9193d592f1ea5f1c6e6e" +
         "&units=imperial";
       fetch(coordQueryUrl)
         .then(function (response) {

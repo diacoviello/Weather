@@ -15,17 +15,6 @@ li {
   line-height: 1em;
 }
 
-/* li:before {
-  content: "\200B";
-  position: absolute;
-}
-
-li::after {
-  content: " ";
-  display: block;
-  clear: both;
-} */
-
 .city-btn {
   width: 100%;
 }
