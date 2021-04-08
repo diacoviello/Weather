@@ -1,4 +1,4 @@
-var myKey = config.MY_KEY;
+// var myKey = config.MY_KEY;
 var cityInput = document.querySelector("#search-input");
 var searchCityEl = document.querySelector("#search-city");
 var cityListEl = document.querySelector("#city-list");
